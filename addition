@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(scanner.in);
+
+        // Input first number
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
+
+        // Input second number
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+
+        // Perform operations
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+
+        // Display results
+        System.out.println("-------------------------");
+        System.out.println("Addition Result (Sum): " + sum);
+        System.out.println("Subtraction Result (Difference): " + difference);
+        System.out.println("-------------------------");
+
+        // Close the scanner
+        scanner.close();
+    }
+}
